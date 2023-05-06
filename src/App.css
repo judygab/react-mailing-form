@@ -37,8 +37,6 @@
   padding: 2rem;
   border-radius: 20px;
   width: 70%;
-  height: 50%;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -48,9 +46,20 @@
   box-shadow: 0 0 10px 5px #6730B6
 }
 
+.form-container.form-inner {
+  display: flex;
+}
+
+.form-container .row {
+  margin: 0.5rem 0;
+  display: flex;
+}
+
+
 .content {
   height: 100vh;
   width: 467px;
+  overflow: hidden;
 }
 
 form {
@@ -72,8 +81,7 @@ label {
   flex-direction: row;
 }
 
-input[type='email'] {
-  width: 100%;
+input, textarea {
   padding: 0.5rem 0;
   font-size: 1.2rem;
   border-radius: 4px;
@@ -82,6 +90,12 @@ input[type='email'] {
   background-color: #f5ecdc;
   flex: 2;
   margin-right: 7px;
+  font-size: 0.7rem;
+  padding: 0.5rem 0.3rem;
+}
+
+textarea {
+  width: 100%;
 }
 
 button[type='submit'] {

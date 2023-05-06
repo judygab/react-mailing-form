@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ContactForm from "./ContactForm";
 
 const App = () => {
   const [data, setData] = React.useState(null);
@@ -17,7 +18,7 @@ const App = () => {
         </div>
       </div>
       <div className="right-column">
-        <div className="form-container">
+{/*        <div className="form-container">
           <h1>Subscribe to Our Newsletter 🚀</h1>
           <p>The Tech Insider is your go-to newsletter for all the latest news in the world of technology, startups, and devtools.</p>
           <form>
@@ -27,7 +28,8 @@ const App = () => {
               <button type="submit">Submit</button>
             </div>
           </form>
-        </div>
+  </div>*/}
+        <ContactForm />
       </div>
     </div>
   );
