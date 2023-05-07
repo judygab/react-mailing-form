@@ -3,13 +3,6 @@ import './App.css';
 import ContactForm from "./ContactForm";
 
 const App = () => {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => {console.log(data)});
-  }, [])
   return (
     <div className="container">
       <div className="left-column">
